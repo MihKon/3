@@ -3,6 +3,7 @@ package com.company;
 public class Hand {
     double length;
     float weight;
+
     Hand(double l, float w){
         this.length = l;
         this.weight = w;

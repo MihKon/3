@@ -3,6 +3,7 @@ package com.company;
 public class Head {
     double length;
     float weight;
+
     Head(double l, float w){
         this.length = l;
         this.weight = w;

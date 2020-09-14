@@ -3,6 +3,7 @@ package com.company;
 public class Leg {
     double length;
     float weight;
+
     Leg(double l, float w){
         this.length = l;
         this.weight = w;

@@ -2,6 +2,7 @@ package com.company;
 
 public class Book {
     String author, date, name;
+
     Book(String author, String name, String date){
         this.author = author;
         this.name = name;
@@ -33,5 +34,14 @@ public class Book {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "author='" + author + '\'' +
+                ", date='" + date + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

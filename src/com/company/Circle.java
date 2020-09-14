@@ -1,7 +1,7 @@
 package com.company;
 
 public class Circle {
-    double radius, perimetr, square;
+    double radius, perimeter, square;
     Circle(double r){
         this.radius = r;
     }
@@ -19,8 +19,17 @@ public class Circle {
         return square;
     }
 
-    public double getPerimetr() {
-        perimetr = 2*Math.PI*radius;
-        return perimetr;
+    public double getPerimeter() {
+        perimeter = 2*Math.PI*radius;
+        return perimeter;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", perimeter=" + perimeter +
+                ", square=" + square +
+                '}';
     }
 }

@@ -2,43 +2,66 @@ package com.company;
 
 public class Human {
     Head head;
-    Leg leg;
-    Hand hand;
-    Human(double l, float weight){
-        this.head = new Head(l ,weight);
-        this.leg = new Leg(l, weight);
-        this.hand = new Hand(l, weight);
+    Leg rleg, lleg;
+    Hand rhand, lhand;
+
+    Human(Head h, Hand rhd, Hand lhd, Leg rl, Leg ll){
+        this.head = h;
+        this.rleg = rl;
+        this.lleg = ll;
+        this.rhand = rhd;
+        this.lhand = lhd;
     }
     Human(){}
-    public void setHand(Hand hand) {
-        this.hand = hand;
+
+    public void setLhand(Hand lhand) {
+        this.lhand = lhand;
+    }
+
+    public void setRhand(Hand rhand) {
+        this.rhand = rhand;
     }
 
     public void setHead(Head head) {
         this.head = head;
     }
 
-    public void setLeg(Leg leg) {
-        this.leg = leg;
+    public void setRleg(Leg rleg) {
+        this.rleg = rleg;
     }
 
-    public Hand getHand() {
-        System.out.println("Length: "+this.hand.getLength()+" Weight:"+this.hand.getWeight());
-        return hand;
+    public void setLleg(Leg lleg) {
+        this.lleg = lleg;
+    }
+
+    public Hand getLhand() {
+        return lhand;
+    }
+
+    public Hand getRhand() {
+        return rhand;
+    }
+
+    public Leg getRleg() {
+        return rleg;
+    }
+
+    public Leg getLleg() {
+        return lleg;
     }
 
     public Head getHead() {
-        System.out.println("Length: "+this.head.getLength()+" Weight:"+this.head.getWeight());
         return head;
-    }
-
-    public Leg getLeg() {
-        System.out.println("Length: "+this.leg.getLength()+" Weight:"+this.leg.getWeight());
-        return leg;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Human{" +
+                "head=" + head +
+                ", rleg=" + rleg +
+                ", lleg=" + lleg +
+                ", rhand=" + rhand +
+                ", lhand=" + lhand +
+                '}';
     }
 }

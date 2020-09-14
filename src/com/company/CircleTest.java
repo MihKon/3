@@ -9,6 +9,6 @@ public class CircleTest {
         Circle c1 = new Circle(r);
         System.out.println(c1.getRadius());
         System.out.println(c1.getSquare());
-        System.out.println(c1.getPerimetr());
+        System.out.println(c1.getPerimeter());
     }
 }
